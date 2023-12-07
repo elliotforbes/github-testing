@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
+          name: "super-awesome/circleci.yml"
           command: "echo very cool"
 
 workflows:
