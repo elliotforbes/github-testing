@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  say-hello:
+  my-awesome-hugging-face-job:
     docker:
       - image: cimg/base:stable
     steps:
@@ -11,6 +11,6 @@ jobs:
           command: "echo very cool"
 
 workflows:
-  say-hello-workflow:
+  super-awesome:
     jobs:
-      - say-hello
+      - my-awesome-hugging-face-job
