@@ -15,15 +15,12 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: "super-special-branch"
+          command: "echo from the super-special-branch"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
-  say-hello-workflow:
+  super-special-branch:
     jobs:
-      - say-hello:
-          filters:
-            tags:
-              only: /.*/
+      - say-hello
