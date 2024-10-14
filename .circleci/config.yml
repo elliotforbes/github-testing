@@ -26,4 +26,4 @@ workflows:
       - say-hello:
           filters:
             tags:
-              only: /^v.*/
+              only: /^nightly-release-\d+\.\d+\.\d+$/
